@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seatwork</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?        family=Orbitron:wght@600;800&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+    <py-script src="main.py"></py-script>
+
+    <style>
+        body{
+            text-align: center; 
+            background-image: linear-gradient( to right, #030303, #f6f4f4);
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .reactor{
+            border: 3px solid;
+            width: 300px;
+            margin: 0 auto; 
+        }
+
+        input{
+            text-decoration: none;
+            color: inherit;
+            display: inline-block; 
+            transition: transform 0.2s ease;
+            padding: 10px; 
+            margin: 15px;
+        }
+
+        input:hover{
+            transform: translateY(-5px);
+        }
+
+
+        
+
+    </style>
+</head>
+<body>
+    <h1>I.G.C</h1>
+    <h4>Committee Verification Checker</h4>
+    <header><div class="reactor">
+        <main><form>
+            <input type="text" id="first_name" placeholder="Enter your first name"><br>
+            <input type="text" id="last_name" placeholder="Enter your last name"><br>
+            <input type="button" py-click="candidate_checker" value="Enter"><br><br><br>
+        </form>
+    </main>
+    </div></header><br><br><br>
+    <div class="result" id="result"></div>   
+</body>
+</html>
